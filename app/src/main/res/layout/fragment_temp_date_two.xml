@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    tools:context="com.globalitians.inquiry.activities.MyTempWork.fragments.TempDateTwoFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/can_rel_two">
+
+        <!--<CalendarView
+            android:id="@+id/calenderview_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </CalendarView>-->
+
+        <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calenderview_two"
+            custom:disable_date_color="#ABABAB"
+            custom:editable="true"
+            custom:week_offset="0"
+            custom:enable_past_date="true"
+            custom:text_size_title="@dimen/font_size_14"
+            custom:text_size_week="@dimen/font_size_14"
+            custom:text_size_date="@dimen/font_size_12"
+            custom:range_color="@color/bv_secondaryColor"
+            custom:selected_date_circle_color="@color/bv_secondaryColor"
+            custom:title_color="@color/bv_primaryColor">
+        </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

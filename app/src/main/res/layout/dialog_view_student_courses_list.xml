@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dimen_300"
+    android:layout_height="@dimen/dimen_450"
+    android:clickable="true"
+    android:background="@drawable/bk">
+
+    <LinearLayout
+        android:id="@+id/linHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAddedCourses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="@dimen/dimen_10"
+            android:text="@string/strAddedCourses"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold"
+            android:background="@drawable/top_corner_bk">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2"
+            android:background="@color/colorBlackAlpha">
+        </View>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linHeader"
+        android:padding="@dimen/size_10">
+
+        <ListView
+            android:id="@+id/lv_courses"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_okay"
+            android:layout_marginTop="@dimen/size_5"
+            android:layout_marginBottom="@dimen/size_5"
+            android:layoutAnimation="@anim/layout_animation_left_to_right"
+            />
+
+        <TextView
+            android:id="@+id/tv_okay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/size_10"
+            android:text="@string/strOkay"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold"
+            android:background="@color/bv_primaryColor">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

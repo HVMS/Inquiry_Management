@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu1"
+        android:title="@string/strCall"/>
+
+    <item
+        android:id="@+id/menu2"
+        android:title="@string/strSms" />
+
+    <item
+        android:id="@+id/menu3"
+        android:title="@string/strNotification" />
+
+    <item
+        android:id="@+id/student_convert"
+        android:title="@string/convertStudent">
+    </item>
+</menu>

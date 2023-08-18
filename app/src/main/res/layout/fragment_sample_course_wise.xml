@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/sample_course_wise_fragment"
+    tools:context=".activities.InquiryReport.Fragments.SampleCourseWiseFragment">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/colorWhite"
+        android:dividerHeight="@dimen/dimen_3"
+        android:id="@+id/sample_course_wise_listview"
+        android:layoutAnimation="@anim/sample_filter_dialog_animation">
+    </ListView>
+
+</FrameLayout>

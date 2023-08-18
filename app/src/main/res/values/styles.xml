@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="textview_normal_form">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/dimen_5</item>
+        <item name="android:textSize">@dimen/size_14</item>
+        <item name="android:layout_marginTop">@dimen/dimen_5</item>
+        <item name="android:textColor">@color/colorBlackAlpha</item>
+        <item name="android:text">@string/strFirstname</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="edt_input">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dimen_35</item>
+        <item name="android:layout_gravity">top</item>
+        <item name="android:layout_marginBottom">@dimen/size_10</item>
+        <item name="android:background">@drawable/edittextround</item>
+        <item name="android:gravity">top</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:padding">@dimen/size_5</item>
+        <item name="android:paddingLeft">@dimen/dimen_5</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/size_16</item>
+    </style>
+
+    <style name="TextInputLayout">
+        <item name="android:textColor">@color/bv_secondaryColor</item>
+        <item name="android:textSize">@dimen/font_size_14</item>
+    </style>
+
+    <style name="ColoredHandleTheme">
+        <item name="colorControlActivated">@color/bv_secondaryColor</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/bv_secondaryColor</item>
+        <item name="colorControlActivated">@color/bv_secondaryColor</item>
+        <item name="colorControlHighlight">@color/bv_secondaryColor</item>
+    </style>
+
+    <style name="RobotoBoldTextAppearance">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fab_scale_up</item>
+        <item name="android:windowExitAnimation">@anim/fab_scale_down</item>
+    </style>
+
+</resources>

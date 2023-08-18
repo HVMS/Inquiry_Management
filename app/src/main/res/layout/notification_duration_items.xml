@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen_10">
+
+    <TextView
+        android:id="@+id/tv_noti_duration"
+        android:layout_width="@dimen/dimen_150"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/font_size_20"
+        android:gravity="center"
+        android:enabled="false">
+    </TextView>
+
+    <CheckBox
+        android:buttonTint="@color/bv_secondaryLightColor2"
+        android:id="@+id/noti_checkbox"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/font_size_20">
+    </CheckBox>
+
+    <!--<RadioButton
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="wrap_content"
+        android:id="@+id/noti_radio"
+        android:checked="false"
+        android:clickable="false"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/font_size_20"
+        android:buttonTint="@color/bv_secondaryLightColor2">
+    </RadioButton>
+-->
+</RelativeLayout>

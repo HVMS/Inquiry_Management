@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:textColor="@color/colorBlackAlpha"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="@string/strDefault"
+        android:id="@+id/tv_defaulttext"
+        android:background="@color/bv_secondaryColor"
+        android:layout_margin="@dimen/dimen_10"
+        android:textSize="@dimen/font_size_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/edt_sms_predefined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_sms_editext_style"
+        android:gravity="top"
+        android:text="@string/strlorem_epsum"
+        android:inputType="textMultiLine"
+        android:lines="7"
+        android:layout_margin="@dimen/dimen_10"
+        android:padding="@dimen/dimen_10"
+        android:textSize="@dimen/font_size_14" />
+
+    <TextView
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="OKAY"
+        android:id="@+id/tv_save"
+        android:background="@drawable/login_btn_rounded"
+        android:layout_margin="@dimen/dimen_10"
+        android:textSize="@dimen/font_size_20"
+        android:layout_width="@dimen/dimen_200"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

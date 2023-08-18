@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel_course"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/dimen_10"
+    android:layout_margin="@dimen/dimen_10"
+    android:background="@drawable/list_item_rounded">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="@dimen/dimen_50"
+        android:layout_height="@dimen/dimen_50"
+        android:id="@+id/circular_image">
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginLeft="@dimen/size_60"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:hint="@string/strPersonName"
+        android:textColor="@color/bv_primaryDarkColor"
+        android:textSize="@dimen/font_size_16" />
+
+    <TextView
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_marginLeft="@dimen/dimen_60"
+        android:layout_below="@+id/tv_name"
+        android:id="@+id/tv_course_name"
+        android:maxLines="1"
+        android:hint="course name"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_14"
+        android:textColor="@color/colorGrey"/>
+
+    <CheckBox
+        android:id="@+id/chkCourse"
+        android:layout_width="@dimen/dimen_30"
+        android:layout_height="@dimen/dimen_30"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_marginRight="@dimen/dimen_40"
+        android:checked="false"
+        android:buttonTint="@color/bv_primaryDarkColor"/>
+
+</RelativeLayout>

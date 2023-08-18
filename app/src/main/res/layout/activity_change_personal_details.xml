@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@mipmap/ic_background_app_theme_dashboard">
+
+        <RelativeLayout
+            android:id="@+id/linAddStudent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/size_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_personal_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/size_50"
+                android:background="@drawable/border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_20"
+                    android:layout_marginRight="@dimen/dimen_20"
+                    android:layout_marginBottom="@dimen/dimen_20"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strFirstname" />
+
+                    <EditText
+                        android:id="@+id/edt_firstname"
+                        style="@style/edt_input"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:hint="@string/strFirstname" />
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strLastname" />
+
+                    <EditText
+                        android:id="@+id/edt_lastname"
+                        style="@style/edt_input"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:hint="@string/strLastname" />
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strMobileno" />
+
+                    <EditText
+                        android:id="@+id/edt_mobileno"
+                        style="@style/edt_input"
+                        android:hint="@string/strMobileno"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:inputType="number"
+                        android:maxLength="10" />
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strReferenceBY" />
+
+                    <Spinner
+                        android:id="@+id/spinner_referenceBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_referenceBY"
+                        android:padding="@dimen/size_10">
+                    </Spinner>
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strcourseselect" />
+
+                    <Spinner
+                        android:id="@+id/spinner_course_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_course_select"
+                        android:spinnerMode="dialog"
+                        android:padding="@dimen/size_10">
+                    </Spinner>
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strFeedback" />
+
+                    <EditText
+                        android:id="@+id/edt_feedback"
+                        style="@style/edt_input"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:hint="@string/strFeedback" />
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strStandard" />
+
+                    <Spinner
+                        android:id="@+id/spinner_standard_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_standard_select"
+                        android:padding="@dimen/size_10">
+                    </Spinner>
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strStream" />
+
+                    <Spinner
+                        android:id="@+id/spinner_stream_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_stream_select"
+                        android:padding="@dimen/size_10">
+                    </Spinner>
+
+                    <TextView
+                        style="@style/textview_normal_form"
+                        android:text="@string/strSubject" />
+
+                    <Spinner
+                        android:id="@+id/spinner_subject_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:spinnerMode="dialog"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_subject_select"
+                        android:padding="@dimen/size_10">
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_installment_date"
+                        style="@style/textview_normal_form"
+                        android:text="@string/strSelectInquiryDate" />
+
+                    <EditText
+                        android:id="@+id/edt_inquiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_35"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:background="@drawable/edittextround"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:paddingLeft="@dimen/dimen_18"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:hint="@string/strInquiryDate" />
+
+                    <TextView
+                        android:id="@+id/tv_joining_date"
+                        style="@style/textview_normal_form"
+                        android:text="@string/strSelectUpcomingDate" />
+
+                    <EditText
+                        android:id="@+id/edt_upcoming_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_35"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:background="@drawable/edittextround"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:paddingLeft="@dimen/dimen_18"
+                        android:hint="@string/strUpcomingDate" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_save"
+        android:layout_width="@dimen/dimen_200"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:background="@drawable/login_btn_rounded"
+        android:padding="@dimen/dimen_10"
+        android:text="@string/strSubmit"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/size_18"
+        android:layout_marginBottom="@dimen/dimen_5"/>
+
+</RelativeLayout>

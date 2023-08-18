@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dimen_10"
+    android:id="@+id/rel_background_layout"
+    android:layout_height="match_parent"
+    tools:context=".activities.SmsAndNotification.Activities.SmsandnotificationActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:background="@drawable/drawable_sms_editext_style"
+            android:padding="@dimen/dimen_10"
+            android:gravity="top"
+            android:textSize="@dimen/font_size_18"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:theme="@style/ColoredHandleTheme"
+            android:id="@+id/edt_sms_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/strSmsType"/>
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_below="@+id/edt_sms_area"
+            android:background="@drawable/ic_sent"
+            android:id="@+id/btn_send"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/dimen_38"
+            android:layout_height="@dimen/dimen_38"
+            android:gravity="center">
+        </Button>
+
+        <Button
+            android:layout_marginTop="@dimen/dimen_10"
+            android:id="@+id/btn_predefined_msg"
+            android:layout_width="@dimen/dimen_38"
+            android:layout_height="@dimen/dimen_38"
+            android:layout_below="@+id/edt_sms_area"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_toLeftOf="@+id/btn_send"
+            android:background="@drawable/ic_msg">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_select_student"
+            android:layout_width="@dimen/dimen_170"
+            android:text="@string/select_student"
+            android:layout_height="@dimen/dimen_38"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold"
+            android:layout_below="@+id/edt_sms_area"
+            android:background="@drawable/set_select_student_bk"
+            android:layout_marginTop="@dimen/dimen_10">
+        </Button>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/filtered_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_sms"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_5">
+
+        <TextView
+            android:id="@+id/mTxtfiltereditems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Hello world"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/colorGrey"
+            android:textSize="@dimen/font_size_16">
+        </TextView>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rel_sms_name_and_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filtered_items"
+        android:visibility="gone">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:id="@+id/chkCourse"
+            android:layout_centerVertical="true"
+            android:layoutDirection="rtl"
+            android:buttonTint="@color/bv_secondaryColor"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_48"
+            android:textDirection="ltr"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_name_student"
+            android:layout_centerVertical="true"
+            android:text="Student Name"
+            android:layout_marginLeft="@dimen/dimen_65"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_below="@+id/rel_sms"
+        android:id="@+id/lv"
+        android:layout_marginTop="@dimen/dimen_60"
+        android:layout_width="match_parent"
+        android:dividerHeight="@dimen/dimen_2"
+        android:divider="@color/colorWhite"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="false"
+        android:layoutAnimation="@anim/layout_animation_left_to_right">
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_date_range"
+        app:borderWidth="@dimen/dimen_0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/calendar_fab"
+        android:layout_above="@+id/fabFilterInquiry"
+        android:backgroundTint="@color/bv_secondaryColor">
+    </android.support.design.widget.FloatingActionButton>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_std_final"
+        app:borderWidth="@dimen/dimen_0"
+        android:layout_alignParentRight="true"
+        android:id="@+id/standard_fab"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:layout_above="@+id/calendar_fab"
+        android:backgroundTint="@color/bv_secondaryColor">
+    </android.support.design.widget.FloatingActionButton>
+
+    <TextView
+        android:id="@+id/tvextra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:textColor="@color/bv_primaryColor"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_20"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/dimen_10"
+        android:visibility="gone" />
+
+</RelativeLayout>
+

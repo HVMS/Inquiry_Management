@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_400"
+        android:id="@+id/rel_select_category">
+
+        <TextView
+            android:id="@+id/title_category"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:text="Select Category"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_20"
+            android:textColor="@color/colorBlackAlpha"
+            android:background="@color/bv_secondaryColor">
+        </TextView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_300"
+            android:id="@+id/lv_Select_Category"
+            android:choiceMode="singleChoice"
+            android:layout_below="@+id/title_category">
+        </ListView>
+
+        <Button
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="wrap_content"
+            android:text="Select"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:padding="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:background="@drawable/login_btn_rounded"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+        </Button>
+    </RelativeLayout>
+
+</RelativeLayout>

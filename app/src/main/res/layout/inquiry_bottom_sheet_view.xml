@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_10">
+
+    <RelativeLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_course_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strFilterByCourse"
+            android:textColor="@color/bv_secondaryColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_20"
+            android:textAlignment="center"
+            android:textAllCaps="true">
+        </Button>
+
+        <ListView
+            android:id="@+id/course_filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_course_filter"
+            android:visibility="gone">
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_month_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strFilterByMonth"
+            android:textColor="@color/bv_secondaryColor"
+            android:textStyle="bold"
+            android:layout_below="@+id/course_filter_list"
+            android:textSize="@dimen/font_size_20"
+            android:textAlignment="center"
+            android:textAllCaps="true">
+        </Button>
+
+        <ListView
+            android:id="@+id/month_filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_month_filter"
+            android:visibility="gone">
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_standard_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strFilterByStandard"
+            android:textColor="@color/bv_secondaryColor"
+            android:textStyle="bold"
+            android:layout_below="@+id/month_filter_list"
+            android:textSize="@dimen/font_size_20"
+            android:textAlignment="center"
+            android:textAllCaps="true">
+        </Button>
+
+        <ListView
+            android:id="@+id/standard_filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_standard_filter"
+            android:visibility="gone">
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_date_between_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/strFilterByStandard"
+            android:textColor="@color/bv_secondaryColor"
+            android:textStyle="bold"
+            android:layout_below="@+id/standard_filter_list"
+            android:textSize="@dimen/font_size_20"
+            android:textAlignment="center"
+            android:textAllCaps="true">
+        </Button>
+
+        <ListView
+            android:id="@+id/date_between_filter_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_date_between_filter"
+            android:visibility="gone">
+        </ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

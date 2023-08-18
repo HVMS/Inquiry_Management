@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.others.ContactUsActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_mail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80">
+
+        <ImageView
+            android:id="@+id/mail_image"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@drawable/ic_mail_blue"
+            android:layout_margin="@dimen/dimen_20">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="info@globalitinfosolution.com"
+            android:autoLink="email"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/mail_image"
+            android:layout_marginTop="@dimen/dimen_25"
+            android:linksClickable="true"
+            android:textColorLink="@color/colorThemeBlue"
+            android:textColor="@color/bv_primaryDarkColor"
+            android:textSize="@dimen/font_size_16">
+        </TextView>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.25"
+            android:layout_marginTop="@dimen/dimen_79"
+            android:layout_marginLeft="@dimen/dimen_70"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:background="@color/colorBlackAlpha"
+            android:layout_below="@+id/logo">
+        </View>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_call"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_80"
+        android:layout_below="@+id/rel_mail">
+
+        <ImageView
+            android:id="@+id/call_image"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@drawable/ic_phone"
+            android:layout_margin="@dimen/dimen_20">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/phone_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 94087 76491"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/call_image"
+            android:layout_marginTop="@dimen/dimen_20">
+        </TextView>
+
+        <TextView
+            android:id="@+id/phone_2"
+            android:layout_below="@+id/phone_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+91 96019 78505"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/call_image">
+        </TextView>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.25"
+            android:layout_marginTop="@dimen/dimen_79"
+            android:layout_marginLeft="@dimen/dimen_70"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:background="@color/colorBlackAlpha"
+            android:layout_below="@+id/logo">
+        </View>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_address"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_call">
+
+        <ImageView
+            android:id="@+id/address_image"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:src="@mipmap/ic_viewonmap"
+            android:layout_margin="@dimen/dimen_20">
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/vastral_branch"
+            android:text="Vastral Branch"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textColor="@color/bv_primaryColor"
+            android:layout_marginLeft="@dimen/dimen_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 St floor, F 29-30, Karnavati Megamall,"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_below="@+id/vastral_branch"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline2"
+            android:layout_below="@+id/addline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opp. Sahaj Residency, Vastral,"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline3"
+            android:layout_below="@+id/addline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahmedabad"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/contact_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact : +91 94087 76491"
+            android:layout_below="@+id/addline3"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <View
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.25"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_70"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:background="@color/colorBlackAlpha"
+            android:layout_below="@+id/contact_one">
+        </View>
+
+        // second address
+
+        <TextView
+            android:id="@+id/odhav_branch"
+            android:text="Odhav Branch"
+            android:textStyle="bold"
+            android:layout_below="@+id/line3"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textColor="@color/bv_primaryColor"
+            android:layout_marginLeft="@dimen/dimen_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2nd floor, Shop No. 1-2, Raghuvilla Avenue,"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_below="@+id/odhav_branch"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline22"
+            android:layout_below="@+id/addline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nr. Navarang school, Odhav,"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline33"
+            android:layout_below="@+id/addline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ahmedabad"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/contact_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact : +91 84019 49268"
+            android:layout_below="@+id/addline33"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <View
+            android:id="@+id/line5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.25"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_70"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:background="@color/colorBlackAlpha"
+            android:layout_below="@+id/contact_two">
+        </View>
+
+        // Azzamgarh branch
+
+        <TextView
+            android:id="@+id/last_branch"
+            android:text="Azamgarh (U.P) Branch"
+            android:textStyle="bold"
+            android:layout_below="@+id/line5"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:textColor="@color/bv_primaryColor"
+            android:layout_marginLeft="@dimen/dimen_70"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koiri Pokhara Campus,opp. Head Post Office,"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_below="@+id/last_branch"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline222"
+            android:layout_below="@+id/addline111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Civil Line, Azamgarh,"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/addline333"
+            android:layout_below="@+id/addline222"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uttar Pradesh"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <TextView
+            android:id="@+id/contact_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact : +91 82009 66149"
+            android:layout_below="@+id/addline333"
+            android:textColor="@color/colorBlackAlpha"
+            android:layout_toEndOf="@+id/address_image">
+        </TextView>
+
+        <View
+            android:id="@+id/line4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:alpha="0.25"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_70"
+            android:layout_marginRight="@dimen/dimen_40"
+            android:background="@color/colorBlackAlpha"
+            android:layout_below="@+id/contact_two">
+        </View>
+
+    </RelativeLayout>
+
+</RelativeLayout>

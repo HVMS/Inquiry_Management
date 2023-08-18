@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.globalitians.inquiry.activities.MyTempWork.fragments.TempDateOneFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/can_rel_one">
+
+        <CalendarView
+            android:id="@+id/calenderview_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxDate="31-12-2025"
+            android:minDate="31-12-2005">
+        </CalendarView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

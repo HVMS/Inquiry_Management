@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.others.AboutUsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_10"
+            android:background="#f1f1f1">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_70"
+                android:scaleType="centerInside"
+                android:src="@drawable/logo_about_us">
+            </ImageView>
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:background="@color/bv_primaryDarkColor"
+                android:layout_below="@+id/logo">
+            </View>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textStyle="bold"
+                android:id="@+id/tv_desc"
+                android:layout_below="@+id/logo"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:textColor="@color/bv_primaryDarkColor"
+                android:textSize="@dimen/font_size_18">
+            </TextView>
+
+            <TextView
+                android:id="@+id/edt_desc"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_below="@+id/tv_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/colorBlackAlpha">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purpose"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:id="@+id/tv_purpose"
+                android:layout_below="@+id/edt_desc"
+                android:textColor="@color/bv_primaryDarkColor"
+                android:textSize="@dimen/font_size_18">
+            </TextView>
+
+            <TextView
+                android:id="@+id/edt_purpose"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_below="@+id/tv_purpose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/purpose"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/colorBlackAlpha">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Products"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:id="@+id/tv_products"
+                android:layout_below="@+id/edt_purpose"
+                android:textColor="@color/bv_primaryDarkColor"
+                android:textSize="@dimen/font_size_18">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_product1"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_below="@+id/tv_products"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inquiry Management System, "
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/colorBlackAlpha">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_product2"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_below="@+id/tv_product1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Institute Management System, "
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/colorBlackAlpha">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_product3"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_below="@+id/tv_product2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attendance System"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/colorBlackAlpha">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Achievements"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:id="@+id/tv_achievements"
+                android:layout_below="@+id/tv_product3"
+                android:textColor="@color/bv_primaryDarkColor"
+                android:textSize="@dimen/font_size_18">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_ach_1"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_below="@+id/tv_achievements"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="More than 60 Partnerships,"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/colorBlackAlpha">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_ach_2"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_below="@+id/tv_ach_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150+ Regular clients"
+                android:textSize="@dimen/font_size_14"
+                android:textColor="@color/colorBlackAlpha">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Founded"
+                android:id="@+id/tv_founded"
+                android:layout_below="@+id/tv_ach_2"
+                android:textColor="@color/bv_primaryDarkColor"
+                android:textSize="@dimen/font_size_16"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_5">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2019"
+                android:id="@+id/tv_year"
+                android:layout_below="@+id/tv_founded"
+                android:textColor="@color/colorBlackAlpha"
+                android:textSize="@dimen/font_size_14"
+                android:layout_marginTop="@dimen/dimen_5">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_more_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_year"
+                android:text="For More Info. Visit : "
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/bv_primaryDarkColor">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/weblink"
+                android:autoLink="web"
+                android:textColorLink="@color/colorThemeBlue"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/font_size_16"
+                android:layout_marginRight="@dimen/dimen_25"
+                android:layout_alignBottom="@+id/tv_more_info"
+                android:layout_alignRight="@+id/tv_more_info"
+                tools:ignore="HardcodedText" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="143dp"
+                android:layout_below="@+id/tv_link"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:src="@drawable/background_about_us_1" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

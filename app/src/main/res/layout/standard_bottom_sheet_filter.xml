@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/tv_standard_name"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:text="By Standard Wise"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_18"
+            android:background="@color/bv_secondaryColor"/>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_500"
+            android:divider="@color/colorWhite"
+            android:dividerHeight="@dimen/dimen_3"
+            android:layout_below="@+id/tv_standard_name"
+            android:id="@+id/sample_standard_wise_filter_listview"
+            android:layoutAnimation="@anim/layout_animation_left_to_right">
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_standard_filter"
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sample_standard_wise_filter_listview"
+            android:text="Apply"
+            android:layout_alignParentLeft="true"
+            android:textSize="@dimen/font_size_18"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/login_btn_rounded"/>
+
+        <Button
+            android:id="@+id/btn_clear_filter"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_below="@+id/sample_standard_wise_filter_listview"
+            android:layout_toRightOf="@+id/btn_standard_filter"
+            android:text="Clear"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:background="@drawable/sms_bk"
+            android:textColor="#898989"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_18"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

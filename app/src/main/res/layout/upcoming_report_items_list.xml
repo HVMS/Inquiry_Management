@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/dimen_4"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_70"
+        android:padding="@dimen/dimen_4"
+        android:background="@drawable/list_item_rounded">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_person_image"
+            android:layout_width="@dimen/dimen_50"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@mipmap/ic_profile_placeholder_dashboard"
+            android:clickable="false"
+            android:layout_marginTop="@dimen/dimen_6"
+            android:focusable="false"
+            app:civ_border="true"
+            app:civ_border_color="@color/colorPrimaryDark">
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv_person_name"
+            android:layout_width="@dimen/dimen_230"
+            android:layout_height="@dimen/dimen_22"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_toRightOf="@+id/iv_person_image"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_size_17"
+            android:text="@string/strPersonName"
+            android:textStyle="bold"
+            android:textColor="@color/colorBlackAlpha">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_course"
+            android:layout_width="@dimen/dimen_230"
+            android:layout_height="@dimen/dimen_20"
+            android:layout_alignTop="@+id/tv_person_name"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:layout_toRightOf="@+id/iv_person_image"
+            android:ellipsize="end"
+            android:alpha="0.75"
+            android:text="@string/strCourse"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_more_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_20"
+            android:src="@drawable/ic_three_dots">
+        </ImageView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

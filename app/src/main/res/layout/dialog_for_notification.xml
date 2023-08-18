@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_370">
+
+    <RelativeLayout
+        android:id="@+id/rel_noti_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:background="@drawable/feedback_bk">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Notification Settings"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_20"
+            android:textColor="@color/colorWhite"
+            android:gravity="center">
+        </TextView>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/rel_noti_update"
+        android:id="@+id/listviewnotificaiton"
+        android:layout_width="match_parent"
+        android:background="@color/bv_secondaryLightColor3"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="@dimen/dimen_3"
+        android:divider="@color/colorWhite"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:background="@color/colorBlackAlpha"
+        android:alpha="0.25"
+        android:layout_below="@+id/listviewnotificaiton">
+    </View>
+
+    <TextView
+        android:id="@+id/tv_sms_select"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Sms Type"
+        android:textColor="@color/bv_primaryColor"
+        android:textSize="@dimen/dimen_18"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:padding="@dimen/dimen_5"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:maxLines="2"
+        android:layout_below="@+id/listviewnotificaiton">
+    </TextView>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_marginTop="@dimen/dimen_5"
+        android:alpha="0.25"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:background="@color/colorBlackAlpha"
+        android:layout_below="@+id/tv_sms_select">
+    </View>
+
+    <Button
+        android:id="@+id/btn_sms_apply"
+        android:layout_width="@dimen/dimen_130"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_below="@+id/tv_sms_select"
+        android:padding="@dimen/dimen_5"
+        android:text="Apply"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:textSize="@dimen/font_size_18"
+        android:background="@drawable/login_btn_rounded"
+        android:textColor="@color/colorWhite">
+    </Button>
+
+    <Button
+        android:id="@+id/btn_sms_cancel"
+        android:layout_width="@dimen/dimen_130"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/btn_sms_apply"
+        android:layout_marginBottom="@dimen/dimen_5"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_below="@+id/tv_sms_select"
+        android:padding="@dimen/dimen_5"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dimen_10"
+        android:textSize="@dimen/font_size_18"
+        android:background="@drawable/sms_bk"
+        android:textColor="#898989">
+    </Button>
+
+</RelativeLayout>

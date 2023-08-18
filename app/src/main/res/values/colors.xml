@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorRed">#Df3000</color>
+    <color name="colorGrey">#808080</color>
+    <color name="colorBlack">#000000</color>
+    <color name="white">#ffffff</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="colorWhiteTransperent">#33ffffff</color>
+    <color name="colorBlackAlpha">#aa000000</color>
+    <color name="colorBlueQR">#4444aa</color>
+    <color name="colorBlueAlpha">#770000ff</color>
+    <color name="colorBlueSelected">#0000ff</color>
+    <color name="colorpurple">#EBC2E9</color>
+    <color name="colordarkpink">#FC5D7D</color>
+    <color name="light_cyan">#E0FFFF</color>
+
+    <color name="colorlightgreen">#C2EBC4</color>
+    <color name="colorPrimarydarkblue">#006f62</color>
+    <color name="colorbluedark">#004338</color>
+    <color name="colorbluelight">#459e8f</color>
+    <color name="colorComplementary">#691893</color>
+    <color name="colorgreenShade1">#00BE80</color>
+    <color name="colorgreenShade2">#00AE74</color>
+    <color name="colorgreenShade3">#009C66</color>
+
+    <color name="lightbluecolor">#C0FFFF</color>
+
+    <!--shimmer-->
+    <color name="placeholder_bg">#dddddd</color>
+    <color name="item_name">#0c0c0c</color>
+    <color name="description">#1a1a1a</color>
+    <color name="chef">#777</color>
+    <color name="timestamp">#777</color>
+    <color name="colorTitleProfile">#999999</color>
+    <color name="colorCancel">#ee3333</color>
+    <color name="colorConfirm">#33ee33</color>
+    <color name="colorIn">#339933</color>
+    <color name="colorOut">#993333</color>
+    <color name="colorRedOut">#aaff0000</color>
+    <color name="colorGreenIn">#aaff00</color>
+    <color name="colorGIT">#222299</color>
+    <color name="transparant">#0000</color>
+    <color name="colorDialogOptions">#008BBF</color>
+
+    <color name="grey_50">#fafafa</color>
+    <color name="grey_100">#f5f5f5</color>
+    <color name="grey_200">#eeeeee</color>
+    <color name="grey_300">#e0e0e0</color>
+    <color name="grey_400">#bdbdbd</color>
+    <color name="grey_500">#9e9e9e</color>
+    <color name="colorBlackLight">#d000</color>
+    <color name="colorThemeOrange">#fd6502</color>
+    <color name="colorThemeBlue">#0032fd</color>
+
+    <!-- 1st Gradient color -->
+    <color name="colorPurple_A400">#D500F9</color>
+    <color name="colorPurple_900">#4A148C</color>
+    <!-- ./ 1st Gradient color -->
+
+    <!-- 2nd Gradient color -->
+    <color name="colorAmber_A400">#FFC400</color>
+    <color name="colorAmber_900">#FF6F00</color>
+    <!-- ./ 2nd Gradient color -->
+
+    <!-- 3rd Gradient color -->
+    <color name="colorGreen_A400">#00E676</color>
+    <color name="colorGreen_900">#1B5E20</color>
+    <!-- ./ 3rd Gradient color -->
+
+    <!-- 4th Gradient color -->
+    <color name="colorRed_A400">#FF1744</color>
+    <color name="colorRed_900">#B71C1C</color>
+    <color name="colorWhite">#fff</color>
+    <color name="color_app_theme">#5544ff</color>
+    <!-- ./ 4th Gradient color -->
+
+
+    <!--- More colors from internet our colors not for others -->
+
+    <color name="bv_primaryColor">#0092b0</color>
+    <color name="bv_primaryLightColor">#57c3e2</color>
+    <color name="bv_primaryDarkColor">#006480</color>
+    <color name="bv_primaryDarkColor2">#003240</color>
+    <color name="bv_secondaryColor">#ffa000</color>
+    <color name="bv_secondaryLightColor">#ffd149</color>
+    <color name="bv_secondaryLightColor2">#ffc25c</color>
+    <color name="bv_secondaryLightColor3">#d0ebf0</color>
+    <color name="bv_secondaryDarkColor">#c67100</color>
+    <color name="bv_primaryTextColor">#ffffff</color>
+    <color name="bv_secondaryTextColor">#000000</color>
+    <color name="text_shadow">#7F000000</color>
+    <color name="transparent">#ffffff</color>
+
+    <!--    close colors -->
+
+</resources>

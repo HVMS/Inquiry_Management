@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/tv_course_name"
+        android:layout_marginRight="@dimen/dimen_10"
+        android:textSize="@dimen/font_size_16"
+        android:paddingLeft="@dimen/dimen_18"
+        android:paddingTop="@dimen/dimen_5"
+        tools:text="Android"
+        android:textColor="@color/bv_primaryColor"
+        android:paddingRight="@dimen/dimen_5"
+        android:paddingBottom="@dimen/dimen_5"
+        android:background="@drawable/edittextround"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_35" />
+
+</RelativeLayout>

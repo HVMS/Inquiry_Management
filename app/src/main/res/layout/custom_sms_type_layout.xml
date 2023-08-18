@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rel_pre_defined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20">
+
+        <Spinner
+            android:id="@+id/spinneer_predefined_sms"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45"
+            android:textAlignment="viewStart"
+            android:background="@drawable/spinner_bk"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:entries="@array/predefined_sms"
+            android:spinnerMode="dropdown">
+        </Spinner>
+
+        <ImageView
+            android:layout_width="@dimen/dimen_25"
+            android:layout_height="@dimen/dimen_25"
+            android:src="@drawable/down"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_20">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_400"
+        android:layout_below="@+id/rel_pre_defined"
+        android:layout_marginTop="@dimen/dimen_20">
+
+        <TextView
+            android:id="@+id/vis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_120"
+            android:text="Select Category Like e.g. Festival, Inquiry, Offers, etc."
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="@dimen/font_size_18"
+            android:padding="@dimen/dimen_10"
+            android:visibility="visible">
+        </TextView>
+
+        <ListView
+            android:id="@+id/lv_predefined_sms_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="@dimen/dimen_3"
+            android:divider="@color/colorWhite"
+            android:visibility="gone"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:descendantFocusability="blocksDescendants"
+            android:padding="@dimen/dimen_10">
+        </ListView>
+
+    </RelativeLayout>
+
+    <!--<Button
+        android:id="@+id/select_btn"
+        android:layout_width="@dimen/dimen_140"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_150"
+        android:layout_marginRight="@dimen/dimen_20"
+        android:background="@drawable/login_btn_rounded"
+        android:text="OKAY"
+        android:padding="@dimen/dimen_10"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_size_16"
+        android:textStyle="bold"
+        android:visibility="visible"
+        tools:ignore="NotSibling">
+    </Button>-->
+
+</RelativeLayout>

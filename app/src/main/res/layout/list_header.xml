@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:padding="@dimen/dimen_10"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:textSize="@dimen/font_size_14"
+        android:background="@drawable/drawable_sms_editext_style"
+        android:padding="@dimen/dimen_10"
+        android:gravity="top"
+        android:lines="5"
+        android:id="@+id/edt_sms_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:hint="@string/strSmsType"/>
+
+    <TextView
+        android:textColor="@color/colorBlack"
+        android:gravity="center"
+        android:text="OR"
+        android:layout_margin="@dimen/dimen_10"
+        android:textSize="@dimen/font_size_16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:padding="@dimen/dimen_10"
+        android:background="@drawable/drawable_button_rounded"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/font_size_16"
+        android:textAllCaps="false"
+        android:id="@+id/btn_predefined_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/strPredefinedMsg">
+    </Button>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_send"-->
+<!--        android:layout_marginTop="@dimen/dimen_100"-->
+<!--        android:textColor="@color/colorBlack"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:text="Select Students to send SMS"-->
+<!--        android:textSize="@dimen/font_size_16"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"/>-->
+</LinearLayout>

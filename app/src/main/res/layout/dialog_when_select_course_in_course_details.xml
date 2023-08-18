@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@color/bv_secondaryLightColor2"
+            android:id="@+id/linHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/size_10"
+                android:gravity="center"
+                android:text="@string/strStudentCourseDetails"
+                android:textColor="@color/colorBlackAlpha"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linBottom"
+            android:layout_below="@+id/linHeader"
+            android:background="@drawable/border"
+            android:layout_marginBottom="@dimen/size_5"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:id="@+id/lin_standard_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/lv_course_list"
+                    android:padding="@dimen/dimen_5"
+                    android:layoutAnimation="@anim/layout_animation_left_to_right">
+                </ListView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+</RelativeLayout>

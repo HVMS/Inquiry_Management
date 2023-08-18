@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MyTempActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel_temp">
+
+        <RelativeLayout
+            android:id="@+id/rel_calender_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:id="@+id/rel_temp_another"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="@dimen/dimen_60"
+                    android:layout_alignParentLeft="true"
+                    android:text="By Date"
+                    android:textColor="@color/colorBlackAlpha"
+                    android:background="@color/bv_secondaryColor"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold">
+                </Button>
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="@dimen/dimen_100"
+                    android:layout_height="@dimen/dimen_60"
+                    android:layout_alignParentRight="true"
+                    android:text="By Range"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorGrey"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold">
+                </Button>
+
+            </RelativeLayout>
+
+            <CalendarView
+                android:id="@+id/calenderview_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rel_temp_another"
+                android:visibility="gone">
+            </CalendarView>
+
+            <Button
+                android:id="@+id/cancel_btn_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calenderview_one"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_120"
+                android:background="@color/colorWhite"
+                android:text="Cancel"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:textColor="@color/colorBlackAlpha"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold">
+            </Button>
+
+            <Button
+                android:id="@+id/okay_btn_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calenderview_one"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/colorWhite"
+                android:text="Okay"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:textColor="@color/colorBlackAlpha"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold">
+            </Button>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_calender_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <CalendarView
+                android:id="@+id/calenderview_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+            </CalendarView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.InquiryReport.Fragments.SampleStandardWiseFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_year"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_2"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"/>
+
+    <TextView
+        android:id="@+id/tv_stream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Streams"
+        android:textColor="@color/bv_primaryColor"
+        android:textSize="@dimen/font_size_18"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:layout_below="@+id/rv_year">
+    </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_stream"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_2"
+        android:layout_below="@+id/tv_stream"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"/>
+
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subjects"
+        android:textColor="@color/bv_primaryColor"
+        android:textSize="@dimen/font_size_18"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/dimen_20"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_below="@+id/rv_stream">
+    </TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_subjects"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_2"
+        android:layout_below="@+id/tv_subject"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/size_10"/>
+
+</RelativeLayout>

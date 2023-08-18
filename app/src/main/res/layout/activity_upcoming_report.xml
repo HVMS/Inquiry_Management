@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.UpcomingReport.Activities.UpcomingReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_margin="@dimen/dimen_5">
+
+            <TextView
+                android:id="@+id/txtfiltername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:textSize="@dimen/font_size_16"
+                android:hint="My Course Name"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="visible"
+                android:background="@drawable/sample_bk">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:src="@drawable/ic_close"
+                android:visibility="visible">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_temp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@+id/rel_filter">
+
+            <RelativeLayout
+                android:id="@+id/rel_filter_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/size_8">
+
+                <LinearLayout
+                    android:id="@+id/ll_filter_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rounded_filter_white"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dimen_5">
+
+                    <TextView
+                        android:id="@+id/tv_filter_by_today"
+                        android:layout_width="@dimen/dimen_80"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlackAlpha"
+                        android:gravity="center"
+                        android:text="Today"
+                        android:textSize="@dimen/font_size_14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_filter_tommorow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_toRightOf="@+id/ll_filter_today"
+                    android:background="@drawable/rounded_filter_white"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_5">
+
+                    <TextView
+                        android:id="@+id/tv_filter_by_tommorow"
+                        android:layout_width="@dimen/dimen_80"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorBlackAlpha"
+                        android:text="Tomorrow"
+                        android:textSize="@dimen/font_size_14" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_filter_within_seven_days"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/size_10"
+                    android:layout_toRightOf="@+id/ll_filter_tommorow"
+                    android:background="@drawable/rounded_filter_white"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/size_5">
+
+                    <TextView
+                        android:id="@+id/tv_filter_by_within_seven_days"
+                        android:layout_width="@dimen/dimen_100"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center"
+                        android:textColor="@color/colorBlackAlpha"
+                        android:textStyle="bold"
+                        android:text="Within 7 Days"
+                        android:textSize="@dimen/font_size_14" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_filter_layout"
+        android:layout_marginTop="@dimen/dimen_40"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:id="@+id/tv_total_selected_courses"
+            android:layout_width="@dimen/dimen_250"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:maxLines="1"
+            android:visibility="gone"
+            android:padding="@dimen/dimen_5"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="@dimen/font_size_16"
+            android:textColor="@color/colorBlackAlpha"
+            android:paddingLeft="@dimen/dimen_5"
+            android:paddingRight="@dimen/dimen_5"
+            android:layout_above="@+id/upcomingrecycler"
+            tools:text="Android And Web Application Development">
+        </TextView>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefreshStudentList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/upcomingrecycler"
+                android:layout_below="@+id/tv_total_selected_courses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical"
+                android:layoutAnimation="@anim/layout_animation"
+                android:padding="@dimen/dimen_10">
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabFilterInquiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/ic_inq_filter"
+        app:borderWidth="0dp"
+        android:backgroundTint="@color/bv_secondaryColor"/>
+
+    <TextView
+        android:id="@+id/tvextra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data Found"
+        android:textColor="@color/bv_primaryColor"
+        android:textStyle="bold"
+        android:textSize="@dimen/font_size_20"
+        android:layout_centerInParent="true"
+        android:padding="@dimen/dimen_10"
+        android:visibility="gone" />
+
+</RelativeLayout>

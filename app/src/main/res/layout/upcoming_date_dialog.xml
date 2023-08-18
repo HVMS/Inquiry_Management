@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/dimen_250"
+    android:layout_height="@dimen/dimen_190">
+
+    <RelativeLayout
+        android:layout_width="@dimen/dimen_250"
+        android:layout_height="@dimen/dimen_190"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/tv_upcoming_date"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_40"
+            android:text="@string/strSelectUpcomingDate"
+            android:background="@color/bv_secondaryColor"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_18"
+            android:gravity="center">
+        </TextView>
+
+        <EditText
+            android:layout_width="@dimen/dimen_160"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30"
+            android:id="@+id/edt_upcoming_date"
+            android:hint="@string/strSelectUpcomingDate"
+            android:editable="false"
+            android:drawableLeft="@drawable/ic_date_range_special"
+            android:focusable="false"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/edittextround"
+            android:layout_below="@+id/tv_upcoming_date"
+            android:gravity="center">
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="@dimen/dimen_130"
+            android:layout_height="@dimen/dimen_40"
+            android:text="Update"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_btn_rounded"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/edt_upcoming_date"
+            android:layout_marginTop="@dimen/dimen_30">
+        </Button>
+
+    </RelativeLayout>
+
+</LinearLayout>

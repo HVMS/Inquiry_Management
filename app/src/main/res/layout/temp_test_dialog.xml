@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rel_temp">
+
+        <!--<LinearLayout
+            android:id="@+id/rel_date_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lin_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By Date"
+                    android:textColor="@color/colorBlackAlpha"
+                    android:background="@color/bv_secondaryColor"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_size_18">
+                </Button>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lin_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="By Two Date"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorGrey"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/font_size_18">
+                </Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_calender_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:layout_below="@+id/rel_date_layout">
+
+            <CalendarView
+                android:id="@+id/calenderview_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+            </CalendarView>
+
+            <Button
+                android:id="@+id/cancel_btn_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calenderview_one"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_120"
+                android:background="@color/colorWhite"
+                android:text="Cancel"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:textColor="@color/colorBlackAlpha"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold">
+            </Button>
+
+            <Button
+                android:id="@+id/okay_btn_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calenderview_one"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/colorWhite"
+                android:text="Okay"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:textColor="@color/colorBlackAlpha"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold">
+            </Button>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rel_calender_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/rel_date_layout">
+
+            <CalendarView
+                android:id="@+id/calenderview_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+            </CalendarView>
+
+            <Button
+                android:id="@+id/cancel_btn_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calenderview_two"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_120"
+                android:background="@color/colorWhite"
+                android:text="Cancel"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:textColor="@color/colorBlackAlpha"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold">
+            </Button>
+
+            <Button
+                android:id="@+id/okay_btn_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/calenderview_two"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10"
+                android:background="@color/colorWhite"
+                android:text="Okay"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:layout_marginBottom="@dimen/dimen_5"
+                android:textColor="@color/colorBlackAlpha"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold">
+            </Button>
+
+
+        </RelativeLayout>-->
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/temp_test_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5"
+            app:tabTextColor="#eaeaea"
+            app:tabIndicatorGravity="stretch"
+            app:tabSelectedTextColor="@color/colorBlackAlpha"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            android:background="#7b7b7b"
+            app:tabIndicatorColor="@color/bv_secondaryColor">
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/temp_test_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_380"
+            android:layout_margin="@dimen/dimen_5"
+            android:layout_below="@+id/temp_test_layout">
+        </android.support.v4.view.ViewPager>
+
+        <TextView
+            android:id="@+id/cancel_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_below="@+id/temp_test_viewpager"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_size_18"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_50">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:id="@+id/tv_okay"
+            android:textColor="@color/bv_primaryColor"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_18"
+            android:textAllCaps="true"
+            android:layout_below="@+id/temp_test_viewpager"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10">
+        </TextView>
+
+    </RelativeLayout>
+
+</LinearLayout>

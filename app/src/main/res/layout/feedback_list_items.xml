@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feedback_list_items">
+
+        <TextView
+            android:layout_marginTop="@dimen/dimen_15"
+            android:id="@+id/tv_feedback_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="My feedback is here"
+            android:padding="@dimen/dimen_5"
+            android:textColor="#797979"
+            android:textSize="@dimen/font_size_16">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bv_primaryColor"
+            android:hint="21-00-2020"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/font_size_14"
+            android:textAlignment="textEnd"
+            android:id="@+id/tv_feedback_date"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

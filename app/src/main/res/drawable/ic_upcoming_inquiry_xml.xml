@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path
+        android:fillColor="#f9a01b"
+        android:pathData="M 423.06 93.77 L 423.06 465.76 L 99.07 465.76 L 99.07 21.78 L 352.56 21.78 L 423.06 93.77 Z" />
+    <path
+        android:fillColor="#f7f7f7"
+        android:pathData="M 141.43 122.68 L 370.58 122.68 Q 382.75 122.68 382.75 134.85 L 382.75 134.84 Q 382.75 147.01 370.58 147.01 L 141.43 147.01 Q 129.26 147.01 129.26 134.84 L 129.26 134.85 Q 129.26 122.68 141.43 122.68 Z" />
+    <path
+        android:fillColor="#f7f7f7"
+        android:pathData="M 141.43 189.26 L 286.83 189.26 Q 299 189.26 299 201.43 L 299 201.42 Q 299 213.59 286.83 213.59 L 141.43 213.59 Q 129.26 213.59 129.26 201.42 L 129.26 201.43 Q 129.26 189.26 141.43 189.26 Z" />
+    <path
+        android:fillColor="#f7f7f7"
+        android:pathData="M 141.43 255.83 L 263.83 255.83 Q 276 255.83 276 268 L 276 267.99 Q 276 280.16 263.83 280.16 L 141.43 280.16 Q 129.26 280.16 129.26 267.99 L 129.26 268 Q 129.26 255.83 141.43 255.83 Z" />
+    <path
+        android:fillColor="#f7f7f7"
+        android:pathData="M 141.43 322.41 L 263.83 322.41 Q 276 322.41 276 334.58 L 276 334.57 Q 276 346.74 263.83 346.74 L 141.43 346.74 Q 129.26 346.74 129.26 334.57 L 129.26 334.58 Q 129.26 322.41 141.43 322.41 Z" />
+    <path
+        android:fillColor="#f7f7f7"
+        android:pathData="M 141.43 388.98 L 263.83 388.98 Q 276 388.98 276 401.15 L 276 401.14 Q 276 413.31 263.83 413.31 L 141.43 413.31 Q 129.26 413.31 129.26 401.14 L 129.26 401.15 Q 129.26 388.98 141.43 388.98 Z" />
+    <path
+        android:fillColor="#623f17"
+        android:pathData="M 352.56 21.78 L 352.56 93.82 L 423.06 93.82 L 352.56 21.78 Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M 414.63 260.38 L 374 260.38 L 374 415.88 L 331.12 415.88 L 331.12 260.38 L 290.49 260.38 L 354.41 175.88 L 414.63 260.38 Z" />
+</vector>

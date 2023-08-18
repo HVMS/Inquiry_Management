@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.AddInquiry.activities.AddinquiryActvity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/dimen_10">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/sample_course_wise_image"
+                android:layout_width="@dimen/dimen_50"
+                android:layout_height="@dimen/dimen_50"
+                app:civ_border="true"
+                android:src="@drawable/default_user_image"
+                android:layout_centerHorizontal="true"
+                app:civ_border_color="@color/bv_primaryColor">
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/open_camera_btn"
+                android:layout_width="@dimen/dimen_20"
+                android:layout_height="@dimen/dimen_20"
+                android:src="@drawable/ic_photo_camera_setting_24dp"
+                app:civ_border="true"
+                android:background="@drawable/circle_image_back"
+                app:civ_border_color="@color/bv_secondaryColor"
+                app:civ_border_width="@dimen/dimen_1"
+                android:layout_marginTop="@dimen/dimen_35"
+                android:layout_alignRight="@+id/sample_course_wise_image"/>
+
+            <TextView
+                android:id="@+id/textview_one"
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_25"
+                android:text="@string/one"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_16"
+                android:background="@drawable/textview_one_bk"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_below="@+id/sample_course_wise_image"/>
+
+            <TextView
+                android:id="@+id/tv_personal_deetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_one"
+                android:text="Personal Details"
+                android:textSize="@dimen/font_size_18"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_below="@+id/sample_course_wise_image"
+                android:textColor="@color/bv_primaryColor"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_430"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginLeft="@dimen/dimen_30"
+                android:layout_marginRight="@dimen/dimen_20"
+                app:cardCornerRadius="@dimen/dimen_20"
+                android:id="@+id/card_view"
+                android:visibility="visible"
+                app:cardElevation="@dimen/dimen_4"
+                android:background="@drawable/login_layout_rounded"
+                android:layout_below="@+id/tv_personal_deetails">
+
+                <RelativeLayout
+                    android:id="@+id/layout_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_430"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10"
+                    android:background="@drawable/login_layout_rounded">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_other_course"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50"
+                        android:visibility="visible"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        app:hintTextAppearance="@style/TextInputLayout" >
+
+                        <EditText
+                            android:id="@+id/edt_firstname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_35"
+                            android:hint="@string/strFirstname"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:background="@drawable/edittextround"
+                            android:theme="@style/ColoredHandleTheme"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textColor="@color/bv_primaryDarkColor"
+                            android:paddingLeft="@dimen/dimen_18"
+                            android:singleLine="true"
+                            android:textSize="@dimen/size_18" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_other_course1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:visibility="visible"
+                        android:layout_below="@+id/text_input_other_course"
+                        app:hintTextAppearance="@style/TextInputLayout" >
+
+                        <EditText
+                            android:id="@+id/edt_lastname"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_35"
+                            android:layout_marginBottom="@dimen/size_10"
+                            android:background="@drawable/edittextround"
+                            android:hint="@string/strLastname"
+                            android:imeOptions="actionNext"
+                            android:theme="@style/ColoredHandleTheme"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textColor="@color/bv_primaryDarkColor"
+                            android:paddingLeft="@dimen/dimen_18"
+                            android:singleLine="true"
+                            android:textSize="@dimen/size_18" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_other_course2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:visibility="visible"
+                        android:layout_below="@+id/text_input_other_course1"
+                        app:hintTextAppearance="@style/TextInputLayout" >
+
+                        <EditText
+                            android:id="@+id/edt_mobile_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_35"
+                            android:layout_marginBottom="@dimen/size_10"
+                            android:background="@drawable/edittextround"
+                            android:hint="@string/strMobileno"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:maxLength="10"
+                            android:maxLines="1"
+                            android:theme="@style/ColoredHandleTheme"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textColor="@color/bv_primaryDarkColor"
+                            android:paddingLeft="@dimen/dimen_18"
+                            android:singleLine="true"
+                            android:textSize="@dimen/size_18" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/tv_reference_by"
+                        style="@style/textview_normal_form"
+                        android:text="@string/strReferenceBY"
+                        android:layout_below="@+id/text_input_other_course2"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_referenceBy"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_below="@+id/tv_reference_by"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_referenceBY"
+                        android:padding="@dimen/dimen_10"
+                        tools:ignore="NotSibling">
+                    </Spinner>
+
+                    <TextView
+                        android:layout_below="@+id/spinner_referenceBy"
+                        android:id="@+id/tv_partner_select"
+                        style="@style/textview_normal_form"
+                        android:text="@string/strpartnerselect"
+                        android:visibility="gone">
+                    </TextView>
+
+                    <Spinner
+                        android:id="@+id/spinner_partner_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_marginBottom="@dimen/size_10"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_partner_select"
+                        android:padding="@dimen/size_10"
+                        android:layout_below="@+id/tv_partner_select"
+                        android:spinnerMode="dropdown"
+                        android:visibility="gone">
+
+                    </Spinner>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/text_input_other_course3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible"
+                        android:layout_below="@+id/spinner_partner_select"
+                        app:hintTextAppearance="@style/TextInputLayout" >
+
+                        <EditText
+                            android:id="@+id/edt_feedback"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_35"
+                            android:layout_marginBottom="@dimen/size_10"
+                            android:background="@drawable/edittextround"
+                            android:hint="@string/strFeedback"
+                            android:imeOptions="actionNext"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:theme="@style/ColoredHandleTheme"
+                            android:textCursorDrawable="@drawable/color_cursor"
+                            android:textColor="@color/bv_primaryDarkColor"
+                            android:paddingLeft="@dimen/dimen_18"
+                            android:singleLine="true"
+                            android:textSize="@dimen/size_18" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/textview_two"
+                android:layout_width="@dimen/dimen_25"
+                android:layout_height="@dimen/dimen_25"
+                android:text="@string/two"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_16"
+                android:background="@drawable/textview_one_bk"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_below="@+id/card_view" />
+
+            <TextView
+                android:id="@+id/tv_inquiry_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_two"
+                android:text="Inquiry Details"
+                android:textSize="@dimen/font_size_18"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_below="@+id/card_view"
+                android:textColor="@color/bv_primaryColor"/>
+
+            <View
+                android:id="@+id/lineone"
+                android:layout_width="@dimen/dimen_4"
+                android:layout_height="@dimen/dimen_450"
+                android:layout_below="@+id/textview_one"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/dimen_10"
+                android:background="@color/bv_primaryColor">
+            </View>
+
+            <View
+                android:id="@+id/linetwo"
+                android:layout_width="@dimen/dimen_4"
+                android:layout_height="@dimen/dimen_10"
+                android:layout_below="@+id/textview_one"
+                android:background="@color/bv_primaryColor"
+                android:visibility="visible"
+                android:layout_marginLeft="@dimen/dimen_10">
+            </View>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_300"
+                android:layout_marginTop="@dimen/dimen_10"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_marginRight="@dimen/dimen_20"
+                android:layout_marginLeft="@dimen/dimen_30"
+                app:cardCornerRadius="@dimen/dimen_20"
+                android:id="@+id/card_view_another"
+                android:visibility="gone"
+                app:cardElevation="@dimen/dimen_4"
+                android:layout_below="@+id/tv_inquiry_details"
+                android:background="@drawable/login_layout_rounded">
+
+                <RelativeLayout
+                    android:id="@+id/layout_form"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_300"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10"
+                    android:background="@drawable/login_layout_rounded"
+                    tools:ignore="DuplicateIds">
+
+                    <TextView
+                        android:id="@+id/tv_course_select"
+                        style="@style/textview_normal_form"
+                        android:text="@string/strcourseselect">
+                    </TextView>
+
+                    <!--<Spinner
+                        android:id="@+id/spinner_course_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_below="@+id/tv_course_select"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_course_select"
+                        android:padding="@dimen/size_10"
+                        android:spinnerMode="dialog">
+
+                    </Spinner>-->
+
+                    <EditText
+                        android:id="@+id/edt_select_courses"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittextround"
+                        android:layout_below="@+id/tv_course_select"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:maxLines="1"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/dimen_10"
+                        android:paddingRight="@dimen/dimen_10"
+                        android:paddingTop="@dimen/dimen_10"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:paddingLeft="@dimen/dimen_18"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:hint="Select Courses" />
+
+
+                    <TextView
+                        android:id="@+id/tv_standard"
+                        android:layout_below="@+id/edt_select_courses"
+                        style="@style/textview_normal_form"
+                        android:text="@string/strStandard"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_standard_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:background="@drawable/edittextround"
+                        android:spinnerMode="dialog"
+                        android:layout_below="@+id/tv_standard"
+                        android:entries="@array/array_standard_select"
+                        android:padding="@dimen/dimen_10"
+                        android:visibility="gone">
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_stream"
+                        android:layout_below="@+id/spinner_standard_select"
+                        style="@style/textview_normal_form"
+                        android:text="@string/strStream"
+                        android:visibility="gone" />
+
+                    <Spinner
+                        android:id="@+id/spinner_stream_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40"
+                        android:layout_below="@+id/tv_stream"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_stream_select"
+                        android:padding="@dimen/size_10"
+                        android:visibility="gone">
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_subject"
+                        android:layout_below="@+id/spinner_stream_select"
+                        style="@style/textview_normal_form"
+                        android:text="@string/strSubject"
+                        android:visibility="gone"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_subject_select"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/tv_subject"
+                        android:layout_height="@dimen/dimen_40"
+                        android:background="@drawable/edittextround"
+                        android:entries="@array/array_subject_select"
+                        android:padding="@dimen/size_10"
+                        android:visibility="gone">
+                    </Spinner>
+
+                    <TextView
+                        android:id="@+id/tv_inquiry_date"
+                        android:layout_below="@+id/spinner_subject_select"
+                        style="@style/textview_normal_form"
+                        android:text="Inquiry Date" />
+
+                    <EditText
+                        android:id="@+id/edt_inquiry_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_35"
+                        android:background="@drawable/edittextround"
+                        android:layout_below="@+id/tv_inquiry_date"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:paddingLeft="@dimen/dimen_18"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:hint="@string/strInquiryDate" />
+
+                    <TextView
+                        android:id="@+id/tv_upcoming_date"
+                        android:layout_below="@+id/edt_inquiry_date"
+                        style="@style/textview_normal_form"
+                        android:text="Upcoming Date" />
+
+                    <EditText
+                        android:id="@+id/edt_upcoming_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_35"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:layout_below="@+id/tv_upcoming_date"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:background="@drawable/edittextround"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:paddingLeft="@dimen/dimen_18"
+                        android:hint="@string/strUpcomingDate" />
+
+                    <TextView
+                        android:id="@+id/tv_sms_type"
+                        android:layout_below="@+id/edt_upcoming_date"
+                        style="@style/textview_normal_form"
+                        android:text="Select SMS Type" />
+
+                    <EditText
+                        android:id="@+id/edt_my_sms_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_35"
+                        android:layout_below="@+id/tv_sms_type"
+                        android:editable="false"
+                        android:focusable="false"
+                        android:theme="@style/ColoredHandleTheme"
+                        android:background="@drawable/edittextround"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:textColor="@color/bv_primaryDarkColor"
+                        android:paddingLeft="@dimen/dimen_18"
+                        android:hint="Select Sms Category">
+                    </EditText>
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/submit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit Inquiry"
+                android:textColor="@color/colorWhite"
+                android:padding="@dimen/dimen_10"
+                android:visibility="gone"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_18"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/card_view_another"
+                android:background="@drawable/login_btn_rounded"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

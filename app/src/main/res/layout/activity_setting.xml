@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:id="@+id/tvTurnOffVoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/size_10"
+            android:text="Turn Off Action Speech"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_size_16" />
+
+        <Switch
+            android:id="@+id/switchVoiceOff"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:thumbTint="@color/bv_secondaryColor"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/size_10" />
+
+    </RelativeLayout>
+
+    <View
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_height="1dp"
+        android:alpha="0.25"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_logout"
+            android:layout_margin="@dimen/dimen_7"
+            android:layout_width="@dimen/dimen_30"
+            android:layout_height="@dimen/dimen_30"
+            android:background="@drawable/ic_logout">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_margin="@dimen/dimen_1"
+            android:layout_width="@dimen/dimen_150"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableTint="@color/colorBlack"
+            android:padding="@dimen/size_10"
+            android:text="Logout"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/font_size_16"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:background="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/dimen_15"
+        android:layout_marginRight="@dimen/dimen_15"
+        android:layout_height="1dp"
+        android:alpha="0.25"/>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="@dimen/dimen_350"
+        android:layout_height="@dimen/dimen_350">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:background="@drawable/ic_background_app_theme_dashboard" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@drawable/border"
+                android:id="@+id/linHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:backgroundTint="@color/bv_secondaryLightColor2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/size_10"
+                    android:gravity="center"
+                    android:text="@string/strAddedCourses"
+                    android:textColor="@color/colorBlackAlpha"
+                    android:textSize="@dimen/font_size_18"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/linBottom"
+                android:layout_below="@+id/linHeader"
+                android:background="@drawable/border"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:id="@+id/lin_course_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/lv_addedcourse"
+                        android:padding="@dimen/dimen_5"
+                        android:layoutAnimation="@anim/layout_animation_left_to_right">
+                    </ListView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/linBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/tv_okay"
+                        android:layout_width="@dimen/dimen_150"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="@dimen/dimen_65"
+                        android:layout_marginBottom="@dimen/dimen_10"
+                        android:background="@drawable/login_btn_rounded"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_10"
+                        android:text="@string/strOkay"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/size_16"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

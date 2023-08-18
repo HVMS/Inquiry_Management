@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="@dimen/dimen_100"
+        android:layout_height="@dimen/dimen_40"
+        android:layout_marginLeft="@dimen/dimen_35"
+        android:layout_below="@+id/edt_sms_area"
+        android:layout_marginTop="-1dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:text="@string/strName"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/checkboxAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_sms_area"
+        android:layout_marginLeft="@dimen/dimen_250"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:layoutDirection="rtl"
+        android:text="@string/strAllSelect"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="@dimen/dimen_10"
+        android:layout_below="@+id/checkboxAll"
+        android:background="#000000" />
+
+</RelativeLayout>

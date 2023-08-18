@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/bv_secondaryLightColor3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_5"
+        app:cardCornerRadius="@dimen/dimen_8">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/my_tv_special"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_65"
+                android:text="Hello World"
+                android:textStyle="normal"
+                android:lines="3"
+                android:padding="@dimen/dimen_10"
+                android:textSize="@dimen/font_size_16"
+                android:textColor="@color/bv_primaryColor">
+            </TextView>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

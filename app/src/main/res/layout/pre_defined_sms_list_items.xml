@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feedback_list_items"
+        android:layout_margin="@dimen/dimen_10">
+
+        <TextView
+            android:id="@+id/tv_predefined_sms_list_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My feedback is here"
+            android:lines="2"
+            android:gravity="center"
+            android:padding="@dimen/dimen_5"
+            android:textColor="@color/bv_primaryColor"
+            android:textSize="@dimen/font_size_16">
+        </TextView>
+
+       <!-- <CheckBox
+            android:id="@+id/checkbox_predefined"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:checked="false"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_15">
+        </CheckBox>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

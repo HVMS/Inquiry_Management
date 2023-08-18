@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen_10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FormOneFragment">
+
+    <ScrollView
+        android:id="@+id/scrollbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_submit_inquiry"
+        android:background="@drawable/border3"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:fadeScrollbars="false"
+        android:scrollbars="vertical">
+
+        <RelativeLayout
+            android:id="@+id/layout_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/dimen_10">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_other_course"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60"
+                android:visibility="visible"
+                android:shadowColor="@color/text_shadow"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                app:hintTextAppearance="@style/TextInputLayout" >
+
+                <EditText
+                    android:id="@+id/edt_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_35"
+                    android:hint="@string/strFirstname"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:background="@drawable/edittextround"
+                    android:theme="@style/ColoredHandleTheme"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@color/bv_primaryDarkColor"
+                    android:paddingLeft="@dimen/dimen_18"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_18"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_other_course1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:visibility="visible"
+                android:layout_below="@+id/text_input_other_course"
+                app:hintTextAppearance="@style/TextInputLayout" >
+
+                <EditText
+                    android:id="@+id/edt_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_35"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:background="@drawable/edittextround"
+                    android:hint="@string/strLastname"
+                    android:imeOptions="actionNext"
+                    android:theme="@style/ColoredHandleTheme"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@color/bv_primaryDarkColor"
+                    android:paddingLeft="@dimen/dimen_18"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_18" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_other_course2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                app:counterEnabled="true"
+                app:counterMaxLength="10"
+                android:visibility="visible"
+                android:layout_below="@+id/text_input_other_course1"
+                app:hintTextAppearance="@style/TextInputLayout" >
+
+                <EditText
+                    android:id="@+id/edt_mobile_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_35"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:background="@drawable/edittextround"
+                    android:hint="@string/strMobileno"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:theme="@style/ColoredHandleTheme"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@color/bv_primaryDarkColor"
+                    android:paddingLeft="@dimen/dimen_18"
+                    android:singleLine="true"
+                    android:textSize="@dimen/size_18" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_other_course4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:layout_below="@+id/text_input_other_course2"
+                android:visibility="visible"
+                app:hintTextAppearance="@style/TextInputLayout" >
+
+                <EditText
+                    android:id="@+id/edt_inquiry_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_35"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:background="@drawable/edittextround"
+                    android:clickable="true"
+                    android:editable="false"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@color/bv_primaryDarkColor"
+                    android:paddingLeft="@dimen/dimen_18"
+                    android:theme="@style/ColoredHandleTheme"
+                    android:hint="@string/strInquiryDate" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/text_input_other_course5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10"
+                android:visibility="visible"
+                android:layout_below="@+id/text_input_other_course4"
+                app:hintTextAppearance="@style/TextInputLayout" >
+
+                <EditText
+                    android:id="@+id/edt_upcoming_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_35"
+                    android:editable="false"
+                    android:theme="@style/ColoredHandleTheme"
+                    android:layout_marginBottom="@dimen/size_10"
+                    android:background="@drawable/edittextround"
+                    android:clickable="true"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textColor="@color/bv_primaryDarkColor"
+                    android:paddingLeft="@dimen/dimen_18"
+                    android:hint="@string/strUpcomingDate" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/tv_submit_inquiry"
+                android:layout_width="@dimen/dimen_150"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/text_input_other_course5"
+                android:background="@drawable/login_btn_rounded"
+                android:padding="@dimen/dimen_10"
+                android:text="Next"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/font_size_18"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dimen_10"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

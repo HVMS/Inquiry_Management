@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <path
+        android:fillColor="#1b96b6"
+        android:pathData="M 4 1.43 L 4 22.89 L 20.92 22.89 L 20.92 5.84 L 16.37 5.84 L 16.37 1.43 L 4 1.43 Z" />
+    <path
+        android:fillColor="#1b96b6"
+        android:pathData="M 17.12 1.43 L 17.12 5.18 L 20.92 5.18 L 17.12 1.43 Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M7,9.44a0.41 0.41 ,0,0,1-0.23-0.09L6.08,8.7a0.34 0.34 ,0,1,1,0.46-0.49L7,8.59,8,7.13a0.34 0.34 ,0,0,1,0.55 0.39 L7.28,9.29A0.33 0.33 ,0,0,1,7,9.43Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M7,13a0.35 0.35 ,0,0,1-0.23-0.09l-0.69-0.64a0.34 0.34 ,0,1,1,0.46-0.5l0.41 0.38 ,1-1.46a0.33 0.33 ,0,0,1,0.46-0.08 0.33 0.33,0,0,1,0.09 0.47 L7.28,12.86A0.33 0.33 ,0,0,1,7,13Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M7,16.38a0.35 0.35 ,0,0,1-0.23-0.09l-0.69-0.64a0.34 0.34 ,0,1,1,0.46-0.5l0.41 0.38 ,1-1.46A0.33 0.33 ,0,0,1,8.44,14a0.33 0.33 ,0,0,1,0.09 0.47 L7.28,16.24a0.33 0.33 ,0,0,1-0.24 0.14 Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M7,20a0.35 0.35 ,0,0,1-0.23-0.09l-0.69-0.64a0.34 0.34 ,0,1,1,0.46-0.5l0.41 0.38 ,1-1.46a0.34 0.34 ,0,0,1,0.55 0.39 L7.28,19.82A0.33 0.33 ,0,0,1,7,20Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M 9.31 7.8 L 18.88 7.8 Q 18.95 7.8 18.95 7.87 L 18.95 8.49 Q 18.95 8.56 18.88 8.56 L 9.31 8.56 Q 9.24 8.56 9.24 8.49 L 9.24 7.87 Q 9.24 7.8 9.31 7.8 Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M 9.31 11.4 L 18.88 11.4 Q 18.95 11.4 18.95 11.47 L 18.95 12.09 Q 18.95 12.16 18.88 12.16 L 9.31 12.16 Q 9.24 12.16 9.24 12.09 L 9.24 11.47 Q 9.24 11.4 9.31 11.4 Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M 9.31 14.77 L 18.88 14.77 Q 18.95 14.77 18.95 14.84 L 18.95 15.46 Q 18.95 15.53 18.88 15.53 L 9.31 15.53 Q 9.24 15.53 9.24 15.46 L 9.24 14.84 Q 9.24 14.77 9.31 14.77 Z" />
+    <path
+        android:fillColor="#fff"
+        android:pathData="M 9.31 18.35 L 18.88 18.35 Q 18.95 18.35 18.95 18.42 L 18.95 19.04 Q 18.95 19.11 18.88 19.11 L 9.31 19.11 Q 9.24 19.11 9.24 19.04 L 9.24 18.42 Q 9.24 18.35 9.31 18.35 Z" />
+</vector>

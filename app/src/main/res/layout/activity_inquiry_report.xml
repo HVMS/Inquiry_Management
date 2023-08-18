@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.InquiryReport.Activities.InquiryReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel_filter_names"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_4">
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/filter_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search here..."
+                android:visibility="gone"
+                android:background="@drawable/sample_bk">
+            </android.support.v7.widget.SearchView>
+
+            <TextView
+                android:id="@+id/tv_filter_names"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dimen_10"
+                android:textSize="@dimen/font_size_16"
+                android:hint="My Course Name"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:visibility="gone"
+                android:background="@drawable/sample_bk"
+                android:layout_below="@+id/filter_search"
+                android:layout_above="@+id/recviewinqrepo"
+                tools:ignore="NotSibling">
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:src="@drawable/ic_close"
+                android:visibility="gone">
+            </ImageView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/blank_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="No Data Found"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="@dimen/font_size_22"
+            android:textColor="@color/bv_primaryColor"
+            android:gravity="center_horizontal">
+        </TextView>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipeToRefreshStudentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rel_filter_names">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recviewinqrepo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutAnimation="@anim/layout_animation_left_to_right"
+                android:scrollbars="vertical">
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabFilterInquiry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dimen_5"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_filter"
+            app:borderWidth="0dp"
+            android:backgroundTint="@color/bv_secondaryColor"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:src="@drawable/ic_date_range"
+            app:borderWidth="0dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/calendar_fab"
+            android:layout_above="@+id/fabFilterInquiry"
+            android:backgroundTint="@color/bv_secondaryColor">
+        </android.support.design.widget.FloatingActionButton>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_marginBottom="@dimen/dimen_5"
+            android:src="@drawable/ic_std_final"
+            app:borderWidth="0dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/standard_fab"
+            android:layout_above="@+id/calendar_fab"
+            android:backgroundTint="@color/bv_secondaryColor"
+            android:visibility="gone">
+        </android.support.design.widget.FloatingActionButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

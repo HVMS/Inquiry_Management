@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/lin_botsheet"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_close"
+            android:clickable="true"
+            android:tint="@color/bv_primaryColor"
+            android:layout_marginTop="@dimen/dimen_10"
+            android:src="@drawable/ic_down">
+        </ImageView>
+
+        <android.support.design.widget.TabLayout
+            android:layout_below="@+id/iv_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tablayout"
+            app:tabTextColor="#eaeaea"
+            app:tabIndicatorGravity="stretch"
+            app:tabSelectedTextColor="@color/colorBlackAlpha"
+            app:tabTextAppearance="@style/TabLayoutTextStyle"
+            android:background="#7b7b7b"
+            app:tabIndicatorColor="@color/bv_secondaryColor"
+            tools:ignore="NotSibling"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginRight="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_10">
+        </android.support.design.widget.TabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/filter_btn"
+            android:layout_below="@+id/tablayout"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginBottom="0dp">
+        </android.support.v4.view.ViewPager>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Apply"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_18"
+            android:textAllCaps="true"
+            android:id="@+id/filter_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/dimen_10"
+            android:layout_marginLeft="@dimen/dimen_10"
+            android:layout_marginBottom="@dimen/dimen_10"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_btn_rounded">
+        </Button>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
